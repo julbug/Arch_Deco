@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './sign-up.styles.css'
 
-const API_URI = "https://writabeatsserver.onrender.com";
+const API_URI = "https://producer-e8hr.onrender.com";
 
 const defaultFormFields = {
     name: '',
