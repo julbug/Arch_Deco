@@ -5,7 +5,7 @@ import '../profile/profile.styles.css'
 import EditBeatForm from "../beats/editBeat.component";
 import UpdateProfileForm from "./updateProfile.component";
 import { useNavigate } from "react-router-dom";
-const API_URL = 'https://writabeatsserver.onrender.com';
+const API_URL = 'https://producer-e8hr.onrender.com';
 
 const Profile = () => {
 
