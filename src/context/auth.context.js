@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-const API_URL = 'https://writabeatsserver.onrender.com';
+const API_URL = 'https://producer-e8hr.onrender.com';
 
 const AuthContext = React.createContext();
 

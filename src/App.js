@@ -24,7 +24,7 @@ function App() {
 
   
   useEffect(() => {
-    axios.get('https://writabeatsserver.onrender.com/api')
+    axios.get('https://producer-e8hr.onrender.com/api')
     .then((response) => {
       // console.log(response);
 
