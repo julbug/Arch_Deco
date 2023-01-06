@@ -5,6 +5,7 @@ import axios from "axios";
 import EditService from "./Services/EditService";
 import { Link } from "react-router-dom";
 import UserContext from "../contexts/UserContext";
+import '../Services/services.styles.css'
 
 
 

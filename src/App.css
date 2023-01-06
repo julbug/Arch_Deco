@@ -1,8 +1,47 @@
+.font-link{
+  font-family: 'Alegreya';
+}
+
+h2, li, ul, button, h3, label, h4, h1, p, a, h5{
+  font-family: 'Alegreya';
+  color: #59493b;
+  text-decoration: none;
+}
+
+.text-link {
+  color: #59493b;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: #59493b;
+  text-decoration: none;
+}
+
+div {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+a:link{
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +74,5 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+

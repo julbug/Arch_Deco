@@ -1,0 +1,29 @@
+
+.serviceDetsCont{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+  }
+  
+  .imgDets{
+    max-height: 100%;
+    max-width: 99%;
+    /* max-width: 126%; */
+    margin-left: 139px;
+  
+    border-radius: 5px;
+  }
+  
+  .verticalLine {
+    position: absolute;
+    background-color: #59493b;
+    width: 6px;
+    top: 104px;
+    bottom: 107px;
+    left: 50%;
+  }

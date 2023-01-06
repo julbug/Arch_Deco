@@ -16,7 +16,7 @@ import AllAppointments from "./components/Appointments/AllAppointments";
 import CreateAppointment from "./components/Appointments/CreateAppointment";
 import AppointmentDetails from "./components/AppointmentDetails";
 import Home from "./components/Home/Home"
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
@@ -112,40 +112,40 @@ function App() {
           path='/cart'
           element={ <IsAnon> <Cart /> </IsAnon>} /> */}
 
-          <Route path="/" element = {<Home />} />
+          <Route path="/" element = {<IsAnon> <Home /> </IsAnon>} />
 
 
-<Route path="/services" element = {<AllServices />} />
+<Route path="/services" element = {<IsAnon>  <AllServices /> </IsAnon>} />
 
-<Route path="/services/create" element = {<CreateService fetchServices = {fetchServices} />} />
+<Route path="/services/create" element = {<IsPrivate> <CreateService fetchServices = {fetchServices} /> </IsPrivate> } />
 
-<Route path="/services/:id" element = {<ServiceDetails />} />
+<Route path="/services/:id" element = {<IsAnon> <ServiceDetails /> </IsAnon>} />
 
-<Route path="/appointments" element = {<AllAppointments />} />
+<Route path="/appointments" element = {<IsPrivate> <AllAppointments /> </IsPrivate> } />
 
-<Route path="/appointments/create" element = {<CreateAppointment fetchAppointments={fetchAppointments} services={services}/>} />
+<Route path="/appointments/create" element = {<IsAnon> <CreateAppointment fetchAppointments={fetchAppointments} services={services}/> </IsAnon>} />
 
-<Route path="/appointments/:id" element = {<AppointmentDetails />} />
+<Route path="/appointments/:id" element = {<IsPrivate> <AppointmentDetails /> </IsPrivate> } />
 
 <Route path="/login" element = {<SignupOrLogin action="login" />} />
 <Route path="/signup" element = {<SignupOrLogin action="signup" />} />
 
 
 {/* PAGE ROUTES */}
-<Route path="/about" element = {<About />} />
+<Route path="/about" element = {<IsAnon> <About /> </IsAnon>} />
 
-<Route path="/contact" element = {<Contact />} />
+<Route path="/contact" element = {<IsAnon> <Contact /> </IsAnon>} />
 
-<Route path="/gallery" element = {<Gallery />} />
+<Route path="/gallery" element = {<IsAnon> <Gallery /> </IsAnon>} />
 
-<Route path="/FAQ" element = {<FAQ />} />
+<Route path="/FAQ" element = {<IsAnon> <FAQ /> </IsAnon>} />
  
       </Routes>
       
-    <Routes>
+    {/* <Routes>
       <Route path='/' element={ <HomePage /> } />
       
-    </Routes>
+    </Routes> */}
 
     </AuthProviderWrapper>
       

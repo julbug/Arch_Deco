@@ -4,6 +4,7 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import EditAppointment from "./EditAppointment";
 import { Link } from "react-router-dom";
+import '../Appointments/appointment.styles.css';
 
 
 

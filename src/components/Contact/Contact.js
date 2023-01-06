@@ -1,3 +1,4 @@
+import '../Contact/contact.styles.css';
 
 import React, { useState } from "react";
 
