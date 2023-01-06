@@ -6,7 +6,6 @@ import SignIn from './components/auth/sign-in.components';
 import SignUp from './components/auth/sign-up.component';
 import IsPrivate from './components/IsPrivate';
 import IsAnon from './components/IsAnon';
-import Profile from './components/profile/profile.component';
 import { AuthProviderWrapper } from './context/UserContext';
 
 import NavBar from "./components/NavBar";
