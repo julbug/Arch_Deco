@@ -8,7 +8,7 @@ import IsPrivate from './components/IsPrivate';
 import IsAnon from './components/IsAnon';
 import { AuthProviderWrapper } from './context/UserContext';
 
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import AllServices from './components/Services/AllServices';
 import CreateService from "./components/Services/CreateService";
 import ServiceDetails from "./components/ServiceDetails";
