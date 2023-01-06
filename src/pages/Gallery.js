@@ -9,6 +9,7 @@ import before7 from '../pics/before7.jpg';
 import after7 from '../pics/after7.jpg';
 import before8 from '../pics/before8.jpg';
 import after8 from '../pics/after8.jpg';
+import '../pages/gallery.styles.css';
 
 class Gallery extends Component {
 

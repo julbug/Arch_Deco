@@ -9,13 +9,13 @@ import IsAnon from './components/IsAnon';
 import { AuthProviderWrapper } from './context/UserContext';
 
 import NavBar from "./components/NavBar";
-import AllServices from './components/AllServices';
-import CreateService from "./components/CreateService";
+import AllServices from './components/Services/AllServices';
+import CreateService from "./components/Services/CreateService";
 import ServiceDetails from "./components/ServiceDetails";
-import AllAppointments from "./components/AllAppointments";
-import CreateAppointment from "./components/CreateAppointment";
+import AllAppointments from "./components/Appointments/AllAppointments";
+import CreateAppointment from "./components/Appointments/CreateAppointment";
 import AppointmentDetails from "./components/AppointmentDetails";
-import Home from "./components/Home"
+import Home from "./components/Home/Home"
 import Contact from "./components/Contact";
 
 import About from "./pages/About";

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import kimPic from '../pics/kimPic.jpg';
 import Hours from '../pics/Hours.jpg';
 import InstagramLogo from '../pics/InstagramLogo.jpg'
+import '../pages/about.styles.css';
  
 class About extends Component {
   render() {
