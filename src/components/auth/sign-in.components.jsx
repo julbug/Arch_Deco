@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../auth/sign-in.styles.css';
-import { AuthContext } from '../../context/auth.context';
+import { AuthContext } from '../../context/UserContext';
 
 const API_URL = "https://producer-e8hr.onrender.com";
 

@@ -22,7 +22,7 @@ export default function EditService({service, stopEditing, fetchServices}){
 
 
     const submitForm = () =>{
-        axios.post("https://archdeco.onrender.com/services/edit/"+service._id, {
+        axios.post("https://producer-e8hr.onrender.com/services/edit/"+service._id, {
             serviceType: formState.serviceType,
             additionalInfo: formState.additionalInfo,
             time: formState.time,

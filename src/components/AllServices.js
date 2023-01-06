@@ -12,7 +12,7 @@ export default function AllServices() {
     const [services, setServices] = useState([]);
 
     const fetchServices = ()=>{
-        axios.get("https://archdeco.onrender.com/services/")
+        axios.get("https://producer-e8hr.onrender.com/services/")
         .then((response)=>{
             console.log(response.data);
             setServices(response.data);

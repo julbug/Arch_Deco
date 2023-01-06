@@ -7,7 +7,7 @@ import SignUp from './components/auth/sign-up.component';
 import IsPrivate from './components/IsPrivate';
 import IsAnon from './components/IsAnon';
 import Profile from './components/profile/profile.component';
-import { AuthProviderWrapper } from './context/auth.context';
+import { AuthProviderWrapper } from './context/UserContext';
 
 import NavBar from "./components/NavBar";
 import AllServices from './components/AllServices';

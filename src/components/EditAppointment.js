@@ -21,7 +21,7 @@ export default function EditAppointment({appointment, stopEditing, fetchAppointm
 
 
     const submitForm = () =>{
-        axios.post("https://archdeco.onrender.com/appointments/edit/"+appointment._id, {
+        axios.post("https://producer-e8hr.onrender.com/appointments/edit/"+appointment._id, {
             firstName: formState.firstName,
             lastName: formState.lastName,
             email: formState.email,

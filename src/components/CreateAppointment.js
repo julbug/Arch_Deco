@@ -31,7 +31,7 @@ console.log(serviceList);
 
     const submitForm = () =>{
         if(formState.terms === true){
-        axios.post("https://archdeco.onrender.com/appointments/create", {
+        axios.post("https://producer-e8hr.onrender.com/appointments/create", {
             firstName: formState.firstName,
             lastName: formState.lastName,
             email: formState.email,

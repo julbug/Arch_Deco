@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { AuthContext } from "../../context/auth.context";
+import { AuthContext } from "../../context/UserContext";
 import axios from "axios";
 import '../profile/profile.styles.css'
 import EditBeatForm from "../beats/editBeat.component";

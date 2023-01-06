@@ -23,7 +23,7 @@ export default function AppointmentDetails({fetchAppointments, theUser}){
 
 //FETCH APPT DATA
     const fetchAppointmentDetails = ()=>{
-        axios.get("https://archdeco.onrender.com/appointments/"+id)
+        axios.get("https://producer-e8hr.onrender.com/appointments/"+id)
         .then((response)=>{
             console.log(response.data);
             setTheAppointment(response.data);
@@ -44,7 +44,7 @@ export default function AppointmentDetails({fetchAppointments, theUser}){
     const deleteAppointment = (theID) => {
 		console.log(theID);
 		axios
-			.post("https://archdeco.onrender.com/appointments/delete", { id: theID })
+			.post("https://producer-e8hr.onrender.com/appointments/delete", { id: theID })
 			.then((response) => {
 				console.log(response);
 				fetchAppointments();

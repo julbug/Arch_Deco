@@ -23,7 +23,7 @@ export default function SignupOrLogin({ action }) {
 console.log(endpoint)
 		axios
 			.post(
-				"https://archdeco.onrender.com/auth/" + endpoint,
+				"https://producer-e8hr.onrender.com/auth/" + endpoint,
 				{
 					username: formState.username,
 					email: formState.email,
