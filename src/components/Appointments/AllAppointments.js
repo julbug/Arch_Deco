@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import {useState, useEffect, useContext} from 'react';
-import UserContext from "../contexts/UserContext";
+import UserContext from "../../contexts/UserContext";
 import '../Appointments/appointment.styles.css';
 
 

@@ -2,9 +2,9 @@ import "../../App.css";
 import {useParams} from "react-router-dom";
 import {useState, useEffect, useContext} from "react";
 import axios from "axios";
-import EditService from "./Services/EditService";
+import EditService from "../Services/EditService";
 import { Link } from "react-router-dom";
-import UserContext from "../contexts/UserContext";
+import UserContext from "../../contexts/UserContext";
 import '../Services/services.styles.css'
 
 

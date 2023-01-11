@@ -2,7 +2,7 @@ import "../../App.css";
 import {useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
 import axios from "axios";
-import EditAppointment from "./EditAppointment";
+import EditAppointment from "../Appointments/EditAppointment";
 import { Link } from "react-router-dom";
 import '../Appointments/appointment.styles.css';
 
