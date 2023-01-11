@@ -127,8 +127,8 @@ function App() {
 
 <Route path="/appointments/:id" element = {<IsPrivate> <AppointmentDetails /> </IsPrivate> } />
 
-<Route path="/login" element = {<SignupOrLogin action="login" />} />
-<Route path="/signup" element = {<SignupOrLogin action="signup" />} />
+<Route path='/login'  element={ <IsAnon> <SignIn /> </IsAnon>  } />
+<Route path='/signup' element={ <IsAnon> <SignUp /> </IsAnon>  } />
 
 
 {/* PAGE ROUTES */}

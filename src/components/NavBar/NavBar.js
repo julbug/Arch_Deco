@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, Routes } from "react-router-dom";
-import "../App.css";
+import "../../App.css";
 import "../NavBar/navbar.styles.css";
 import UserContext from "../contexts/UserContext";
 import {useState, useEffect, useContext} from "react";
