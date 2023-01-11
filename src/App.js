@@ -11,10 +11,10 @@ import { AuthProviderWrapper } from './context/UserContext';
 import NavBar from "./components/NavBar/NavBar";
 import AllServices from './components/Services/AllServices';
 import CreateService from "./components/Services/CreateService";
-import ServiceDetails from "./components/ServiceDetails";
+import ServiceDetails from "./components/Services/ServiceDetails";
 import AllAppointments from "./components/Appointments/AllAppointments";
 import CreateAppointment from "./components/Appointments/CreateAppointment";
-import AppointmentDetails from "./components/AppointmentDetails";
+import AppointmentDetails from "./components/Appointments/AppointmentDetails";
 import Home from "./components/Home/Home"
 import Contact from "./components/Contact/Contact";
 
