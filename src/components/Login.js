@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import axios from "axios";
 import { useState } from "react";
-import UserContext from "../../contexts/UserContext";
+import UserContext from "../../context/UserContext";
 
 export default function SignupOrLogin({ action }) {
 	const [formState, setFormState] = useState({
