@@ -5,9 +5,9 @@ const API_URL = 'https://producer-e8hr.onrender.com';
 const UserContext = React.createContext();
 
 function AuthProviderWrapper(props) {
-    const [isLoggedIn, setIsLoggedIn ] = useState(false);
+    const [isLoggedIn, setIsLoggedIn ] = useState(false);   
     const [isLoading, setIsLoading] = useState(true);
-    const [user, setUser] = useState(null);
+    const [theUser, setUser] = useState(null);
 
 
     const storeToken = (token) => {
@@ -24,11 +24,11 @@ function AuthProviderWrapper(props) {
               )
             .then((response) => {
                 
-                const user = {...response.data};
+                const theUser = {...response.data};
                
                 setIsLoggedIn(true);
                 setIsLoading(false);
-                setUser(user);
+                setUser(theUser);
             })
             .catch((error) => {
                 setIsLoggedIn(false);
@@ -60,7 +60,7 @@ function AuthProviderWrapper(props) {
             value={{ 
                 isLoggedIn, 
                 isLoading, 
-                user,
+                theUser,
                 setUser,
                 storeToken,
                 authenticateUser,
