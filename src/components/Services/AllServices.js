@@ -2,8 +2,10 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import {useState, useEffect, useContext} from 'react';
-import UserContext from "../../context/UserContext";
+import { UserContext } from "../../context/UserContext";
 
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
 
 export default function AllServices() {
 
@@ -12,7 +14,7 @@ export default function AllServices() {
     const [services, setServices] = useState([]);
 
     const fetchServices = ()=>{
-        axios.get("https://producer-e8hr.onrender.com/services/")
+        axios.get(SERVER_URL + "/services/")
         .then((response)=>{
             console.log(response.data);
             setServices(response.data);

@@ -6,7 +6,8 @@ import EditAppointment from "../Appointments/EditAppointment";
 import { Link } from "react-router-dom";
 import '../Appointments/appointment.styles.css';
 
-
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
 
 export default function AppointmentDetails({fetchAppointments, theUser}){
     const {id} = useParams();
@@ -24,7 +25,7 @@ export default function AppointmentDetails({fetchAppointments, theUser}){
 
 //FETCH APPT DATA
     const fetchAppointmentDetails = ()=>{
-        axios.get("https://producer-e8hr.onrender.com/appointments/"+id)
+        axios.get( SERVER_URL + "/appointments/" +id)
         .then((response)=>{
             console.log(response.data);
             setTheAppointment(response.data);
@@ -45,7 +46,7 @@ export default function AppointmentDetails({fetchAppointments, theUser}){
     const deleteAppointment = (theID) => {
 		console.log(theID);
 		axios
-			.post("https://producer-e8hr.onrender.com/appointments/delete", { id: theID })
+			.post( SERVER_URL + "/appointments/delete" , { id: theID })
 			.then((response) => {
 				console.log(response);
 				fetchAppointments();

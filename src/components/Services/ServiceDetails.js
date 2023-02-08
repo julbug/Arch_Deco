@@ -4,10 +4,11 @@ import {useState, useEffect, useContext} from "react";
 import axios from "axios";
 import EditService from "../Services/EditService";
 import { Link } from "react-router-dom";
-import UserContext from "../../context/UserContext";
+import { UserContext } from "../../context/UserContext";
 import '../Services/services.styles.css'
 
-
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
 
 export default function ServiceDetails({fetchServices}){
 
@@ -29,7 +30,7 @@ console.log(theUser)
     
    //FETCH SERVICE DATA
     const fetchServiceDetails = ()=>{
-        axios.get("https://producer-e8hr.onrender.com/services/"+id)
+        axios.get(SERVER_URL + "/services/"+id)
         .then((response)=>{
             console.log(response.data);
             setTheService(response.data);
@@ -49,7 +50,7 @@ console.log(theUser)
     const deleteService = (theID) => {
 		console.log(theID);
 		axios
-			.post("https://producer-e8hr.onrender.com/services/delete", { id: theID })
+			.post(SERVER_URL + "/services/delete", { id: theID })
 			.then((response) => {
 				console.log(response);
 				fetchServices();

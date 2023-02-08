@@ -24,6 +24,9 @@ import Gallery from "./pages/Gallery";
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
+
 
 function App() {
 
@@ -39,7 +42,7 @@ function App() {
   const [appointments, setAppointments] = useState([]);
 
   const fetchAppointments = ()=>{
-      axios.get("https://producer-e8hr.onrender.com/appointments/")
+    axios.get(SERVER_URL + "/appointments")
       .then((response)=>{
           console.log(response.data);
           setAppointments(response.data);
@@ -57,7 +60,7 @@ function App() {
   const [services, setServices] = useState([]);
 
   const fetchServices = ()=>{
-      axios.get("https://producer-e8hr.onrender.com/services/")
+    axios.get(SERVER_URL + "/services")
       .then((response)=>{
           console.log(response.data);
           setServices(response.data);

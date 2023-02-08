@@ -1,7 +1,10 @@
 import React, {useContext} from "react";
 import axios from "axios";
 import { useState } from "react";
-import UserContext from "../../context/UserContext";
+import { UserContext } from "../../context/UserContext";
+
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
 
 export default function SignupOrLogin({ action }) {
 	const [formState, setFormState] = useState({
@@ -23,7 +26,8 @@ export default function SignupOrLogin({ action }) {
 console.log(endpoint)
 		axios
 			.post(
-				"https://producer-e8hr.onrender.com/auth/" + endpoint,
+
+				SERVER_URL + "/auth" + endpoint,
 				{
 					username: formState.username,
 					email: formState.email,

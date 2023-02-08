@@ -3,6 +3,9 @@ import axios from "axios"
 import {useState} from 'react';
 import { useNavigate } from "react-router-dom";
 
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
+
 export default function EditAppointment({appointment, stopEditing, fetchAppointments}){
     // console.log(appointment)
 
@@ -21,7 +24,7 @@ export default function EditAppointment({appointment, stopEditing, fetchAppointm
 
 
     const submitForm = () =>{
-        axios.post("https://producer-e8hr.onrender.com/appointments/edit/"+appointment._id, {
+        axios.post(SERVER_URL + "/appointments/edit/" +appointment._id, {
             firstName: formState.firstName,
             lastName: formState.lastName,
             email: formState.email,

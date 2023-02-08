@@ -3,6 +3,9 @@ import axios from "axios"
 import {useState} from 'react';
 import { useNavigate } from "react-router-dom";
 
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
+
 export default function EditService({service, stopEditing, fetchServices}){
     // console.log(service)
 
@@ -22,7 +25,7 @@ export default function EditService({service, stopEditing, fetchServices}){
 
 
     const submitForm = () =>{
-        axios.post("https://producer-e8hr.onrender.com/services/edit/"+service._id, {
+        axios.post(SERVER_URL + "/services/edit/"+service._id, {
             serviceType: formState.serviceType,
             additionalInfo: formState.additionalInfo,
             time: formState.time,

@@ -2,9 +2,11 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import {useState, useEffect, useContext} from 'react';
-import UserContext from "../../context/UserContext";
+import { UserContext } from "../../context/UserContext";
 import '../Appointments/appointment.styles.css';
 
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
 
 export default function AllAppointments() {
 
@@ -13,7 +15,7 @@ export default function AllAppointments() {
     const [appointments, setAppointments] = useState([]);
 
     const fetchAppointments = ()=>{
-        axios.get("https://producer-e8hr.onrender.com/appointments/")
+        axios.get(SERVER_URL + "/appointments")
         .then((response)=>{
             console.log(response.data);
             setAppointments(response.data);

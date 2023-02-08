@@ -2,9 +2,11 @@ import axios from 'axios';
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../auth/sign-in.styles.css';
-import { AuthContext } from '../../context/UserContext';
+import { UserContext } from "../../context/UserContext";
 
-const API_URL = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
+
 
     const defaultFormFields = {
         email: '',
@@ -16,7 +18,7 @@ const SignIn = () => {
     const { email, password } = formFields;
     const [errorMessage, setErrorMessage] = useState(undefined);
 
-    const { storeToken, authenticateUser } = useContext(AuthContext);
+    const { storeToken, authenticateUser } = useContext(UserContext);
 
     const resetFormFields = () => {
         setFormFields(defaultFormFields);
@@ -34,7 +36,7 @@ const SignIn = () => {
         event.preventDefault();
         const requestBody = { email, password };
         
-        axios.post(`${API_URL}/auth/login`, requestBody)
+        axios.post(`${SERVER_URL}/auth/login`, requestBody)
         .then((response) => {
             console.log('JWT token', response.data.authToken);
 

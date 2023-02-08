@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 const API_URL = 'https://producer-e8hr.onrender.com';
 
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
+
 const UserContext = React.createContext();
 
 function AuthProviderWrapper(props) {
@@ -19,7 +22,7 @@ function AuthProviderWrapper(props) {
 
         if(storedToken) {
             axios.get(
-                `${API_URL}/auth/verify`, 
+                `${SERVER_URL}/auth/verify`, 
                 { headers: { Authorization: `Bearer ${storedToken}`} }
               )
             .then((response) => {

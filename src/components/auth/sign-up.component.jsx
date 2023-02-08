@@ -3,7 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './sign-up.styles.css'
 
-const API_URI = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = https://producer-e8hr.onrender.com;
+const SERVER_URL = "https://localhost:4200";
+
 
 const defaultFormFields = {
     name: '',
@@ -37,7 +39,7 @@ const SignUp = () => {
         event.preventDefault();
         const requestBody = { name, location, email, password };
 
-        axios.post(`${API_URI}/auth/signup`, requestBody)
+        axios.post(`${SERVER_URL}/auth/signup`, requestBody)
         .then((response) => {
             console.log(response)
             navigate('/');
