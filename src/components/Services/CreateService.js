@@ -2,8 +2,8 @@ import axios from 'axios';
 import {useState} from 'react';
 import { useNavigate } from "react-router-dom";
 
-// const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "http://localhost:4200";
+const SERVER_URL = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = "http://localhost:4200";
 
 export default function CreateService(props){
     const navigate = useNavigate();

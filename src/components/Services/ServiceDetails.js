@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 import '../Services/services.styles.css'
 
-// const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "http://localhost:4200";
+const SERVER_URL = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = "http://localhost:4200";
 
 export default function ServiceDetails({fetchServices}){
 

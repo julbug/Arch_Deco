@@ -24,8 +24,8 @@ import Gallery from "./pages/Gallery";
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
-// const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "http://localhost:4200";
+const SERVER_URL = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = "http://localhost:4200";
 
 
 function App() {

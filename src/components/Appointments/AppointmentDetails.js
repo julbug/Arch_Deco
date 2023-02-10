@@ -6,8 +6,8 @@ import EditAppointment from "../Appointments/EditAppointment";
 import { Link } from "react-router-dom";
 import '../Appointments/appointment.styles.css';
 
-// const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "http://localhost:4200";
+const SERVER_URL = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = "http://localhost:4200";
 
 export default function AppointmentDetails({fetchAppointments, theUser}){
     const {id} = useParams();

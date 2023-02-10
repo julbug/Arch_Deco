@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-const API_URL = 'https://producer-e8hr.onrender.com';
+// const API_URL = 'https://producer-e8hr.onrender.com';
 
-// const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "http://localhost:4200";
+const SERVER_URL = "https://producer-e8hr.onrender.com";
+// const SERVER_URL = "http://localhost:4200";
 
 const UserContext = React.createContext();
 
