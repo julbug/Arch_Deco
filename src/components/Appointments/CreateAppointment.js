@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Link, Route, Routes } from "react-router-dom";
 
 // const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "https://localhost:4200";
+const SERVER_URL = "http://localhost:4200";
 
 export default function CreateAppointment(props){
     const navigate = useNavigate();

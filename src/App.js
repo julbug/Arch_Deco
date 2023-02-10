@@ -25,7 +25,7 @@ import Gallery from "./pages/Gallery";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 // const SERVER_URL = https://producer-e8hr.onrender.com;
-const SERVER_URL = "https://localhost:4200";
+const SERVER_URL = "http://localhost:4200";
 
 
 function App() {
@@ -115,33 +115,33 @@ function App() {
           path='/cart'
           element={ <IsAnon> <Cart /> </IsAnon>} /> */}
 
-          <Route path="/" element = {<IsAnon> <Home /> </IsAnon>} />
+          <Route path="/" element = { <Home /> } />
 
 
-<Route path="/services" element = {<IsAnon>  <AllServices /> </IsAnon>} />
+<Route path="/services" element = {<AllServices />} />
 
-<Route path="/services/create" element = {<IsPrivate> <CreateService fetchServices = {fetchServices} /> </IsPrivate> } />
+<Route path="/services/create" element = {<CreateService fetchServices = {fetchServices} />  } />
 
-<Route path="/services/:id" element = {<IsAnon> <ServiceDetails /> </IsAnon>} />
+<Route path="/services/:id" element = {<ServiceDetails />} />
 
-<Route path="/appointments" element = {<IsPrivate> <AllAppointments /> </IsPrivate> } />
+<Route path="/appointments" element = {<AllAppointments />  } />
 
-<Route path="/appointments/create" element = {<IsAnon> <CreateAppointment fetchAppointments={fetchAppointments} services={services}/> </IsAnon>} />
+<Route path="/appointments/create" element = {<CreateAppointment fetchAppointments={fetchAppointments} services={services}/>} />
 
-<Route path="/appointments/:id" element = {<IsPrivate> <AppointmentDetails /> </IsPrivate> } />
+<Route path="/appointments/:id" element = {<AppointmentDetails /> } />
 
-<Route path='/login'  element={ <IsAnon> <SignIn /> </IsAnon>  } />
-<Route path='/signup' element={ <IsAnon> <SignUp /> </IsAnon>  } />
+<Route path='/login'  element={  <SignIn /> } />
+<Route path='/signup' element={  <SignUp /> } />
 
 
 {/* PAGE ROUTES */}
-<Route path="/about" element = {<IsAnon> <About /> </IsAnon>} />
+<Route path="/about" element = {<About /> } />
 
-<Route path="/contact" element = {<IsAnon> <Contact /> </IsAnon>} />
+<Route path="/contact" element = {<Contact /> } />
 
-<Route path="/gallery" element = {<IsAnon> <Gallery /> </IsAnon>} />
+<Route path="/gallery" element = {<Gallery /> } />
 
-<Route path="/FAQ" element = {<IsAnon> <FAQ /> </IsAnon>} />
+<Route path="/FAQ" element = {<FAQ /> } />
  
       </Routes>
       
